@@ -120,7 +120,7 @@ var Deferred = new Class({
 
     then: function (doneCallback, failCallback) {
         this._addDone(doneCallback);
-        this._addDone(failCallback);
+        this._addFail(failCallback);
 
         return this;
     },
